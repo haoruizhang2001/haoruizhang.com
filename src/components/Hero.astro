@@ -4,7 +4,7 @@ import { siteConfig } from "../config";
 
 <div
   id="hero"
-  class="relative isolate overflow-hidden bg-white py-24 md:h-screen"
+  class="relative isolate overflow-hidden bg-white py-24 md:min-h-screen md:flex md:flex-col"
   style={`--accent-color: ${siteConfig.accentColor}`}
 >
   <!-- Gradient overlay -->
@@ -50,7 +50,7 @@ import { siteConfig } from "../config";
           fill={siteConfig.accentColor}
           font-family="monospace"
           font-size="20"
-          transform="rotate(10)">{}</text
+          transform="rotate(10)">{"{}"}</text
         >
         <text
           x="250"
@@ -129,7 +129,7 @@ import { siteConfig } from "../config";
       height="100%"
       stroke-width={0}></rect>
   </svg>
-  <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex items-center">
+  <div class="md:flex-1 p-8 sm:p-12 md:p-24 flex items-center">
     <div>
       <h2
         class="text-pretty text-xl sm:text-2xl md:text-5xl font-bold tracking-tight text-gray-700 animate-fade-in"
